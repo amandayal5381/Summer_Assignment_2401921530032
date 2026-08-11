@@ -9,7 +9,8 @@ public:
     {
     
     //find mid
-    mid=(start+end)/2;
+    mid=start+(end-start)/2;  // It will not give you integers overflow
+    //mid=(start+end)/2;
     //find key size
     if(arr[mid]==key)
     return mid;
